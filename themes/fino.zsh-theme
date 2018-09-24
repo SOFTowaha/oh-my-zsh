@@ -12,8 +12,8 @@
 # Also borrowing from http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/
 
 function prompt_char {
-  git branch >/dev/null 2>/dev/null && echo "±" && return
-  echo '○'
+  git branch >/dev/null 2>/dev/null && echo "🔥" && return
+  echo '🤔 🐒 ☠️  ㊙️'
 }
 
 function box_name {
@@ -34,10 +34,10 @@ local git_info='$(git_prompt_info)'
 local prompt_char='$(prompt_char)'
 
 
-PROMPT="╭─%{$FG[040]%}%n%{$reset_color%} %{$FG[239]%}at%{$reset_color%} %{$FG[033]%}$(box_name)%{$reset_color%} %{$FG[239]%}in%{$reset_color%} %{$terminfo[bold]$FG[226]%}${current_dir}%{$reset_color%}${git_info} %{$FG[239]%}using%{$FG[243]%}${ruby_env}
+PROMPT="╭─%{$FG[090]%}永远不要紧张%{$reset_color%} %{$FG[239]%}在%{$reset_color%} %{$FG[033]%}$(box_name)%{$reset_color%} %{$FG[239]%}在%{$reset_color%} %{$terminfo[bold]$FG[226]%}${current_dir}%{$reset_color%}${git_info} %{$FG[239]%}运用%{$FG[090]%}${ruby_env}
 ╰─${prompt_char}%{$reset_color%} "
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[239]%}on%{$reset_color%} %{$fg[255]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[239]%}💠%{$reset_color%} %{$fg[255]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$FG[202]%}✘✘✘"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$FG[040]%}✔"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$FG[202]%}❌❌❌"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$FG[040]%}💤"

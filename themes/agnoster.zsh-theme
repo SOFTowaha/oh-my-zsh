@@ -89,8 +89,9 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment default 198 "%m"
-    prompt_segment default 99 ""
+    prompt_segment default 98 "💩"
+    prompt_segment default 255 "🍎"
+    prompt_segment default 255 "🌶️"
     prompt_segment default 208 "愿原力与你同在"
   fi
 }
@@ -198,7 +199,9 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue yellow '% ✈ ~'
+  prompt_segment blue yellow '% 元'
+  prompt_segment white 255 '% ⭕'
+  prompt_segment green yellow '% 🔥'
 }
 
 # Virtualenv: current working virtualenv
